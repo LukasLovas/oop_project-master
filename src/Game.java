@@ -28,7 +28,7 @@ public class Game {
 		for (int i = 40; i < 100; i++) {
 			k[i] = new Knight();
 			k[i].energy = 40;
-			o[i] = new Ogre();
+			o[i] = new EvilOgre();
 			o[i].energy = 50;
 		}
 
