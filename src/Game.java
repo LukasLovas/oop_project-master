@@ -12,7 +12,7 @@ public class Game {
 		// this is just the initialization of ogre and knight arrays so that different combinations would occur
 		for (int i = 0; i < 20; i++) {
 			k[i] = new Knight();
-			k[i].energy = 40;
+			k[i].setEnergy(40);
 			o[i] = new BadOgre();
 			o[i].energy = 50;
 			o[i].hungry = true;
@@ -20,7 +20,7 @@ public class Game {
 
 		for (int i = 20; i < 40; i++) {
 			k[i] = new Knight();
-			k[i].energy = 40;
+			k[i].setEnergy(40);
 			o[i] = new BadOgre();
 			o[i].energy = 50;
 
@@ -28,8 +28,7 @@ public class Game {
 		}
 
 		for (int i = 40; i < 100; i++) {
-			k[i] = new Knight();
-			k[i].energy = 40;
+			k[i] = new Knight(50);
 			o[i] = new EvilOgre();
 			o[i].energy = 50;
 		}
@@ -39,7 +38,7 @@ public class Game {
 			clash(o[i], k[i]);
 			
 			System.out.println(i + ":"
-					+ "knight " + k[i].energy + " / "
+					+ "knight " + k[i].getEnergy() + " / "
 					+ "ogre " + o[i].energy);
 		}
 	}

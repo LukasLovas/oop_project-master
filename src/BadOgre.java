@@ -9,7 +9,7 @@ public class BadOgre extends Ogre {
 	}
 	void eat(Knight knight) {
 
-		knight.energy = 0;
+		knight.setEnergy(0);
 	}
 
 }
