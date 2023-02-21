@@ -23,6 +23,8 @@ public class Game {
 			k[i].energy = 40;
 			o[i] = new BadOgre();
 			o[i].energy = 50;
+
+			//((BadOgre) o[i]).eat(k[i]);
 		}
 
 		for (int i = 40; i < 100; i++) {

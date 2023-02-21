@@ -1,6 +1,14 @@
 
 public class Knight {
 	int energy;
+
+	public Knight(){
+
+	}
+
+	public Knight(int energy){
+		this.energy = energy;
+	}
 	
 	void attack(Ogre ogre) {
 		ogre.energy = (int) (0.9 * ogre.energy); // (int) just casts a float result into an int

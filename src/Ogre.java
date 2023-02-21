@@ -1,6 +1,7 @@
 
 public class Ogre {
-	boolean hungry;
+
+    boolean hungry;
 	int energy;
 	void revenge(Knight knight) {
 		if (energy > knight.energy)
